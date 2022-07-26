@@ -1,0 +1,342 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body, html { 
+	width: 100%;
+ height: 100%;
+ padding: 0;
+ margin: 0;
+ }
+
+a { 
+	text-decoration: none;
+	 color: black; 
+}
+
+.main-header {
+	margin: 2%;
+	margin-bottom: 0%;
+	padding: 2%;
+}
+.main-nav-list {
+	display: flex;
+	list-style: none;
+}
+.main-nav-list a:hover {
+	text-decoration-line: overline;
+	color: #0065FC;
+	text-decoration-style: solid;
+
+}
+.nav {
+ margin: 0 2% 0 2%;
+}
+#logo {
+	margin-right: auto;
+}
+.searchbox {
+	font-size: 20px;
+	font-weight:  extra bold;
+	margin: 0;
+	margin-bottom: 1%;
+	
+	
+}
+.searchbox label, input, button {
+	padding: 1%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 1%;
+	border: 2px #F2F2F2;
+}
+.searchbox label {
+	background-color: #F2F2F2;
+	margin-right: 0;
+	border-radius: 15px 0 0 15px;
+	padding-right: 1.2%;
+	padding-left: 1.2%;
+}
+.searchbox input {
+	border: black;
+	color: blue;
+	font-weight: 600;
+	border: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+.searchbox button {
+	background-color: #0065FC;
+	color: white;
+	border: none;
+	border-radius: 0 15px 15px 0;
+	padding: 1%;
+}
+.box {
+	width: 70%;
+	margin: 0%;
+	padding: 0%;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	justify-self: flex-start;
+}
+.filters .fa-solid {
+	position: absolute;
+	font-size: 150%;
+	color: #0065FC;
+	padding: 15px;
+	background-color: #DEEBFF;
+	border-radius: 40px;
+	left: -7%;
+	top: -7%;
+}
+#familial {
+	padding-left: 18.5px;
+	padding-right: 18.5px;
+}
+.filters {
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1.5% 1.5% 1.5% 6%;
+	border: 3px solid lightgrey;
+	border-radius: 40px;
+	margin-bottom: 2%;
+}
+#filter {
+	border: none;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-left: 0%;
+	padding-right: 0%;
+	align-self: flex-start;
+}
+.fa-solid {
+	font-size: 80%;
+}
+.info .fa-solid {
+	font-size: 75%;
+	color: #0065FC;
+	padding: 0.4% 0.7% 0.4% 0.7%;
+	border: 2px solid #F2F2F2;
+	border-radius: 100px;
+}
+.first-section {
+	margin-left: 4%;
+	margin-right: 2%;
+	margin-top: 0%;
+	width: 100%;
+	max-width: 100%;
+	display: inline-grid;
+	grid-template-columns: 60% 30%;
+	grid-column-gap: 3%;
+}
+.hébergements, .populaires {
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding: 4%;
+}
+.populaires h2{
+	padding-top: 5%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+}
+.table, .tables {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 3%;
+	
+}
+.card .fa-solid, .cards .fa-solid{
+	color: #0065FC;
+}
+.cards {
+	position: relative;
+  width: 30%; /*1*/
+  margin: 1%; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 20px;
+  padding: 0.5%;
+}
+.cards a { /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+.cards:hover .card-image img { /*6*/
+  width: 160%;
+}
+
+.card-image { 
+  width: 100%;
+  position: relative;/*2*/
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+
+.card-image img {
+  width: 100%;/*4*/
+    /*5 - Méthode de centrage en fonction de la taille de l'image */
+  transition-property: filter width; 
+  transition-duration: .3s;
+  transition-timing-function: ease;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 0.5%;
+  margin: 0%;
+}
+
+.cards-body {
+	padding: 0.5%;
+	margin: 0.5%;
+}
+.populaires .cards-body {
+	padding: 4%;
+}
+#br {
+	white-space: nowrap;
+}
+.cards-body h4, .cards-body p {
+	padding: 0.5%;
+	margin: 0.5%;
+}
+
+.side {
+	justify-content: space-between;
+}
+#grey, #gray, #gris, #grise, #lightgrey, #lightgray, #greyy {
+	color: lightgrey;
+}
+.icone {
+	position: relative;
+	top: 40%;
+
+}
+.populaires h2 .fa-solid {
+	font-size: 100%;
+	position: relative;
+	left: 27%;
+}
+#black {
+	align-self: flex-end;
+}
+.populaires .card {
+	background-color: white;
+	display: flex;
+	width: 87%;
+	height: 24%;
+	border-radius: 20px;
+	padding: 1%;
+	margin: 5%;
+}
+.icons {
+	align-self: flex-end;
+}
+
+.populaires .image {
+	position: relative;
+	width: 40%;
+	height: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20PX;
+	overflow: hidden;
+}
+
+.populaires img {
+
+	transition-property: filter width; 
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.card:hover .image img { /*6*/
+  width: 175%;
+}
+
+.populaires .card-body {
+	margin: 2%;
+}
+
+.second-section {
+	margin-left: 4%;
+	margin-right: 3%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.activités {
+	display: flex;
+	justify-content: space-between;
+}
+.post {
+	width: 22%;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px 3px #F2F2F2 ;
+	padding: 0px;
+}
+.small {
+	width: 22%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.petit-post {
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px 3px #F2F2F2 ;
+	padding: 0px;
+
+}
+
+
+.post img,.petit-post img{
+	border-top-left-radius: 20px ;
+	border-top-right-radius: 20px;	
+}
+
+.activités h3 {
+	margin-left: 5%;
+}
+
+
+.main-footer {
+	width: 100%;
+	background-color: #F2F2F2;
+	display: inline-grid;
+	grid-template-columns: 33% 33% 33%;
+	padding: 1%;
+}
+
+.main-footer ul {
+	list-style: none;
+
+}
+
+.main-footer li {
+	padding: 1%;
+}
+
+@media all and (max-device-width: 768px)
+{
+	#logo {
+		width: auto;
+	}
+
+	.main-nav-list {
+	display: inline-flex;
+	flex-direction: row;
+	list-style: none;
+}
+}
